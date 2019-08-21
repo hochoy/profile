@@ -1,14 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to David's github profile
 
-You can use the [editor on GitHub](https://github.com/hochoy/profile/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+David is a cloud-native data engineer, experienced in building data pipelines on the AWS platform. Originally a DNA sequencing bioinformatician, he's discovered the joys of automating data pipelines that connect the physical and digital world. Lego expert.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Languages and Frameworks
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've found that python, javascript and bash commands to be the most useful.
 
 ```markdown
+
 Syntax highlighted code block
 
 # Header 1
@@ -28,10 +28,17 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Cloud Architecture
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hochoy/profile/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+I also like designing cloud architecture. AWS is my preferred platform as it has a diverse set of lego-like components that easily connect.
 
-### Support or Contact
+![pipeline1](src)
+![pipeline1](src)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Projects and interests
+
+Some of my past projects:
+- DNA Sequencing of patient populations (Masters thesis) [Link](https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0371254)
+- Collecting and analyzing IoT data from sensors placed on elevators (Consulting project with TSBC)  [Link](https://www.technicalsafetybc.ca/safety-data/iot-elevating-safety)
+- Crowdsourcing data on energy usage and safety across rural communities (Consulting project with TSBC)  [Link](https://www.technicalsafetybc.ca/blog/determining-state-safety-bcs-remote-grid-communities)

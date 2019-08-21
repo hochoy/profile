@@ -1,7 +1,10 @@
+![Lego logo](lego.gif)
+
 ## Welcome to David's github profile
 
 David is a cloud-native data engineer, experienced in building data pipelines on the AWS platform. Originally a DNA sequencing bioinformatician, he's discovered the joys of automating data pipelines that connect the physical and digital world. Lego expert.
 
+https://hochoy.github.io/profile/
 
 ### Languages and Frameworks
 

@@ -5,25 +5,28 @@ David is a cloud-native data engineer, experienced in building data pipelines on
 
 ### Languages and Frameworks
 
-Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've found that python, javascript and bash commands to be the most useful.
+Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've found that **python, javascript and bash commands** to be the most useful.
 
 ```markdown
+**Node.js on Lambda as a microservice**
 
-Syntax highlighted code block
+const { Pool } = require('pg');                             //postgres connections
+const GoogleSpreadsheet = require('google-spreadsheet');    //easy connection to gsheet, not official pkg from goog
+const { promisify } = require('util');                      //convert callbacks to promises
+const crypto = require('crypto');                           //de/encrypting data
+const moment = require('moment');                           //manipulating time
+const fs = require('fs');                                   //access filesystem
+const {execSync} = require('child_process');                //run processes such as bash scripts/commands
+const {parse} = require('path');                            //extract parts of a filepath
+const {S3} = require('aws-sdk');                            //access aws S3 service
+const carbone = require('carbone');                         //write json data into .odt file
+const {google} = require('googleapis');                     //access google drive (and sheet too) via google api
 
-# Header 1
-## Header 2
-### Header 3
+*Code isn't included here as it is too long. Originally used a promise chain, but switched to async/await calls instead.*
+**Task flow**:
+RDS -> pg-pool(query) -> crypto (decrypt) -> moment (+time data) -> carbone (write odt) -> execSync (convert to pdf and zip using child_process) -> S3 (store pdf) -> google (write to gdrive)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -32,8 +35,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 I also like designing cloud architecture. AWS is my preferred platform as it has a diverse set of lego-like components that easily connect.
 
-![pipeline1](src)
-![pipeline1](src)
+![pipeline1](iot-pipeline-1.jpg)
 
 
 ### Projects and interests

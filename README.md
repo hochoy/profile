@@ -11,7 +11,7 @@ Languages and frameworks:
 - Python (Flask - micro, Django - app)
 - Javascript (Node.js - micro)
 - SQL
-- R
+- R (tidyverse, httr, Rselenium, caret, shiny, lubridate)
 
 #### Sample Node.js microservice data flow:
 

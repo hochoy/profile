@@ -5,10 +5,18 @@ David is a cloud-native data engineer, experienced in building data pipelines on
 
 ### Languages and Frameworks
 
-Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've found that **python, javascript and bash commands** to be the most useful.
+Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've focused on these languages and frameworks:
+
+Languages and frameworks:
+- Python (Flask - micro, Django - app)
+- Javascript (Node.js - micro)
+- SQL
+- R
+
+#### Sample Node.js microservice data flow:
 
 ```markdown
-**Node.js on Lambda as a microservice**
+**A microservice that queries data from Postgres and GSheets and spits out a pdf report**
 
 const { Pool } = require('pg');                             //postgres connections
 const GoogleSpreadsheet = require('google-spreadsheet');    //easy connection to gsheet, not official pkg from goog
@@ -22,19 +30,27 @@ const {S3} = require('aws-sdk');                            //access aws S3 serv
 const carbone = require('carbone');                         //write json data into .odt file
 const {google} = require('googleapis');                     //access google drive (and sheet too) via google api
 
-*Code isn't included here as it is too long. Originally used a promise chain, but switched to async/await calls instead.*
+Code isn't included here as it is too long. Originally used a promise chain, but switched to async/await calls instead.*
 **Task flow**:
 RDS -> pg-pool(query) -> crypto (decrypt) -> moment (+time data) -> carbone (write odt) -> execSync (convert to pdf and zip using child_process) -> S3 (store pdf) -> google (write to gdrive)
 
 
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 ### Cloud Architecture
 
 I also like designing cloud architecture. AWS is my preferred platform as it has a diverse set of lego-like components that easily connect.
 
+Experience with  these AWS Services and concepts:
+- Lambda (Runtime layers, Cron/Event triggers)
+- RDS (Read replica), DynamoDB
+- EC2 (Security groups, VPCs, Subnets, NAT)
+- S3
+- API Gateway (Access policy)
+- IoT Core (object, shadows, pub-sub, certificates and policy)
+- RedShift
+
+#### Sample IoT data flow on AWS:
 ![pipeline1](iot-pipeline-1.jpg)
 
 

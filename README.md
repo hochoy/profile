@@ -1,6 +1,6 @@
 ## Welcome to David's github profile
 
-David is a cloud-native data engineer, experienced in building data pipelines on the AWS platform. Originally a DNA sequencing bioinformatician, he's discovered the joys of automating data pipelines that connect the physical and digital world. Lego expert.
+David is a cloud-native data engineer and IoT developer, experienced in building data pipelines on the AWS platform. Originally a DNA sequencing bioinformatician, he's discovered the joys of automating data pipelines that connect the physical and digital world. Lego expert.
 
 https://hochoy.github.io/profile/
 
@@ -9,10 +9,11 @@ https://hochoy.github.io/profile/
 Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've focused on these languages and frameworks:
 
 Languages and frameworks:
-- Python (Flask - micro, Django - app)
-- Javascript (Node.js - micro)
+- Javascript (Node.js, GraphQL, some React)
 - SQL
 - R (tidyverse, httr, Rselenium, caret, shiny, lubridate)
+- python
+- bash
 
 #### Sample Node.js microservice data flow:
 
@@ -31,7 +32,6 @@ const {S3} = require('aws-sdk');                            //access aws S3 serv
 const carbone = require('carbone');                         //write json data into .odt file
 const {google} = require('googleapis');                     //access google drive (and sheet too) via google api
 
-Code isn't included here as it is too long. Originally used a promise chain, but switched to async/await calls instead.*
 **Task flow**:
 RDS -> pg-pool(query) -> crypto (decrypt) -> moment (+time data) -> carbone (write odt) -> execSync (convert to pdf and zip using child_process) -> S3 (store pdf) -> google (write to gdrive)
 

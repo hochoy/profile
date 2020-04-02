@@ -9,11 +9,18 @@ https://hochoy.github.io/profile/
 Most of my work is connecting data sources to processing and final outputs or to trigger events in a system. Therefore, I've focused on these languages and frameworks:
 
 Languages and frameworks:
+
+For work:
 - Javascript (Node.js, GraphQL, some React)
 - SQL
+
+For grad school:
 - R (tidyverse, httr, Rselenium, caret, shiny, lubridate)
-- python
-- bash
+
+For fun/plumbing:
+- python (math-y packages)
+- bash (IoT, devices and cli's)
+- C# (Unity 3D)
 
 #### Sample Node.js microservice data flow:
 

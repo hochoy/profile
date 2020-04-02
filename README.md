@@ -14,7 +14,7 @@ For work:
 - Javascript (Node.js, GraphQL, some React)
 - SQL
 
-For grad school:
+For grad school and data analyses:
 - R (tidyverse, httr, Rselenium, caret, shiny, lubridate)
 
 For fun/plumbing:
